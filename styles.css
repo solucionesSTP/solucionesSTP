@@ -15,14 +15,18 @@ body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--texto);backgroun
 
 /* HEADER */
 .header {
-  position: sticky;
+      background: linear-gradient(135deg, var(--verde-claro), var(--verde-medio));
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+  /*position: sticky;
   padding: 10px 0px;
   top: 0;
-  z-index: 9999;
+  z-index: 9999; = Este estilo es para darle un efecto cristalino al header
   background:#1f2069;
   color: #fff;
-  transition: background 0.4s ease, backdrop-filter 0.4s ease;
-}
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;*/
 
 .header-content{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .logo-section{display:flex;align-items:center;gap:12px}
@@ -36,8 +40,10 @@ body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--texto);backgroun
 .banner h2{font-size:28px;margin-bottom:6px}
 .banner p{font-size:16px;opacity:.95}
 
+.servicios h2 {display: flex;gap: 10px;flex-wrap: wrap;justify-content: center;align-items: center;padding: 20px 0; color: #0f278f}
+
 /* FILTROS */
-.filters {display: flex;gap: 10px;flex-wrap: wrap;justify-content: center;align-items: center;padding: 28px 0;border-bottom: 2px solid #ccc; /* la línea divisoria */}
+.filters {display: flex;gap: 10px;flex-wrap: wrap;justify-content: center;align-items: center;padding: 10px 0;border-bottom: 2px solid #ccc; /* la línea divisoria */}
 .filter-btn{background:#fff;border:2px solid var(--verde-claro);padding:8px 16px;border-radius:20px;cursor:pointer;font-weight:600}
 .filter-btn.active{background:var(--verde-claro);color:#fff;transform:translateY(-2px)}
 
